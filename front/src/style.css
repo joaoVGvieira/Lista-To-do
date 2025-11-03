@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  height: 1.25em;
+  width: 1.25em;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: #1f2937;
+  transition: all 0.2s ease-in-out;
+
+  border: 2px solid #3b82f6;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+input[type="checkbox"]:checked::after {
+  content: '✔';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8em;
+  color: white;
+  pointer-events: none;
+}
+
+
+.checkbox-urgent {
+  border-color: #dc2626;
+}
+.checkbox-urgent:checked {
+  background-color: #dc2626;
+  border-color: #dc2626;
+}
+.checkbox-urgent:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.5);
+}
+
+.checkbox-sometime {
+  border-color: #6b7280;
+}
+.checkbox-sometime:checked {
+  background-color: #6b7280;
+  border-color: #6b7280;
+}
+.checkbox-sometime:focus {
+  box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.5);
+}
+
+.checkbox-completed {
+  border-color: #16a34a;
+}
+.checkbox-completed:checked {
+  background-color: #16a34a;
+  border-color: #16a34a;
+}
+.checkbox-completed:focus {
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.5);
+}
+
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
