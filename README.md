@@ -6,12 +6,7 @@
 
 Para testar este projeto, você precisará de **dois terminais** abertos: um para o Backend e um para o Frontend.
 
-### 1. Pré-requisitos
-
-* Node.js (v18+ recomendado)
-* Um servidor MySQL (local ou remoto)
-
-### 2. Configuração do Backend (Terminal 1)
+### 1. Configuração do Backend (Terminal 1)
 
 1.  **Crie o Banco de Dados:**
     Execute o seguinte comando no seu cliente MySQL:
@@ -47,7 +42,7 @@ Para testar este projeto, você precisará de **dois terminais** abertos: um par
     ```
     O backend deve estar rodando em `http://localhost:3000`. O Sequelize irá criar as tabelas!!!
 
-### 3. Configuração do Frontend (Terminal 2)
+### 2. Configuração do Frontend (Terminal 2)
 
 1.  **Navegue até a pasta do frontend (em um novo terminal):**
     ```sh
@@ -64,6 +59,6 @@ Para testar este projeto, você precisará de **dois terminais** abertos: um par
     npm run dev
     ```
 
-### 4. Acessando a Aplicação
+### 3. Acessando a Aplicação
 
 Abra seu navegador e acesse: **`http://localhost:5173`**.
