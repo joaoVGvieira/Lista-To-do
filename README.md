@@ -20,7 +20,7 @@ Para testar este projeto, você precisará de **dois terminais** abertos: um par
     ```
 
 2.  **Navegue até a pasta do backend:**
-y    ```sh
+    ```sh
     cd back 
     ```
 
